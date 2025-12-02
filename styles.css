@@ -1,0 +1,73 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+  user-select: none;
+}
+h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  margin-bottom: 10px;
+}
+#setup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+#setup input {
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+}
+#setup button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  transition: .2s;
+}
+#setup button:hover {
+  transform: scale(1.05);
+}
+#word {
+  font-size: 2.5rem;
+  letter-spacing: 10px;
+  margin: 20px 0;
+}
+#letters button {
+  background: rgba(255,255,255,0.2);
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.2rem;
+  width: 40px;
+  margin: 5px;
+  border-radius: 8px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#letters button:hover {
+  background: rgba(255,255,255,0.4);
+  transform: scale(1.1);
+}
+#letters button:disabled {
+  background: rgba(255,255,255,0.1);
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+canvas {
+  margin-top: 20px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
